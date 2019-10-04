@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+h1, h2 {
+  text-decoration: none;
+}
+
+
+/* Add a black background color to the top navigation */
+#topnav {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 10px;
+  background-color: #333;
+  padding: 0;
+  /* transition: ease-in-out 1.5s; */
+  animation-name: bounceInDown;
+  animation-duration: 1s;
+  box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+#topnav a:hover {
+  background-color: #F37130;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#topnav a.active {
+  background-color: #F37130;
+  color: white;
+}
+
+#topnav li {
+	list-style: none;
+  display: inline-block;
+}
+
+.titulo a {
+  float: right;
+}
+
+#submenu {
+  display: none;
+  position: absolute;
+  top: 45px;
+}
+ul li:hover #submenu{
+  display: block;
+}
+
+#submenu li {
+  background: black;
+  display: block;
+}
+
+#topnav a:hover {
+  display: inline-block;
+}
+
+#topnav ul a{
+  display: block;
+  float: none;
+}
+
+#topnav a.titulo {
+  float: right;
+}
+
+ /* ----------- FIN DEL HEADER ----------------------------------------- */
+
+.three-columns {
+	width: 33%;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: grey;
+  border-radius: 3%;
+    }
+
+p {
+  	padding: 2% 3% 2% 3%;
+    border-left: 10px solid #F37130;
+    background-color: #333;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 5px; 
+}
+
+.contenedor {
+	  width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: slideInLeft;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 50px;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 15%;
+}
+.centrado{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    top: 40%;
+    left: 10px;
+}
+
+.textohistoria h1 {
+	font-size: 40px;
+	font-size: 40px;
+    background-color: coral;
+    padding: 3%;
+}
+
+.textohistoria h2 {
+  border: 3px solid white;
+  border-radius: 15px;
+  color: white;
+  font-size: 30px;
+  background: linear-gradient(to top, #11998e, #38ef7d );
+  padding: 3%;
+  margin: 0 auto;
+  animation-duration: 2s;
+  animation-name: fadeInLeft;
+}
+
+.textohistoria p {
+	font-family: 'Roboto';
+  line-height: 3;
+  word-spacing: 15px;
+}
+
+.textohistoria {
+  box-shadow: 7px 13px 42px 3px rgba(17,153,142,0.75);
+  margin: 5% 0;
+}
+
+
+.logohome {
+  width: 96%;
+}
+ .bannerhome {
+ 	width: 100%;
+ }
+.bannerhome h2 {
+	font-family: 'Questrial', sans-serif;
+  background-color: darkcyan;
+  color: white;
+  padding: 1%;
+  font-size: medium;
+  text-decoration: none;
+}
+.banda {
+  width: 100%;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+.cajaformulario {
+	width: 96%;
+}
+
+
+.fa, .far, .fas {
+    width: 30px;
+    font-size: 20px;
+}
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
